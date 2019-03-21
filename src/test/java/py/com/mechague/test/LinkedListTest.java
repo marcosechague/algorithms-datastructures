@@ -32,4 +32,12 @@ public class LinkedListTest {
         linkedList.addBack(2);
         Assert.assertEquals(2, linkedList.getLast());
     }
+
+    @Test
+    public void size(){
+        linkedList.addBack(1);
+        linkedList.addFront(2);
+        linkedList.addFront(3);
+        Assert.assertEquals(3, linkedList.size());
+    }
 }
