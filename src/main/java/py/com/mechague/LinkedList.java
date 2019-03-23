@@ -6,7 +6,7 @@ import py.com.mechague.exceptions.LinkedListEmptyException;
  * @author Marcos Echague
  * @since 20/03/2019
  */
-
+//For this Linked list, we use int data
 public class LinkedList {
 
     Node head;
@@ -56,6 +56,29 @@ public class LinkedList {
         return lastNode.data;
     }
 
+    public void delete(int data){
+
+        if (head==null) return;
+
+        if(head.data == data){
+            head=head.next;
+            return;
+        }
+
+        Node previosNode = head;
+        Node currentNode = head.next;
+
+        do {
+            if(currentNode.data==data){
+                previosNode.next = previosNode.next.next;
+                return;
+            }
+            previosNode = currentNode;
+            currentNode = currentNode.next;
+        } while (currentNode!=null);
+
+    }
+
     public int size(){ //O(n)
 
         if(head==null) return 0;
@@ -69,6 +92,10 @@ public class LinkedList {
         }
 
         return size;
+    }
+
+    public void clear(){
+        head = null;
     }
 
 }
