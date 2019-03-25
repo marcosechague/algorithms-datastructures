@@ -9,7 +9,7 @@ import py.com.mechague.exceptions.LinkedListEmptyException;
 //For this Linked list, we use int data
 public class LinkedList {
 
-    Node head;
+    private Node head;
 
     public void addFront(int data) { //Killer feature O(1) Constant time
 

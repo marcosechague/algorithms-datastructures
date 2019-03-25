@@ -5,13 +5,14 @@ package py.com.mechague;
  * @since 22/02/2019
  */
 
-public class DinamicArray<String>{
+//Is only String for now
+public class DynamicArray{
 
     private Object[] array;
     private int size;
     private int capacity;
 
-    public DinamicArray(int initialCapacity){
+    public DynamicArray(int initialCapacity){
         capacity = initialCapacity;
         array = new Object[initialCapacity];
         size = 0;
@@ -21,7 +22,7 @@ public class DinamicArray<String>{
         return array[index];
     }
 
-    public void set(int index, Object element ){ //O(1)
+    public void set(int index, String element ){ //O(1)
         array[index] = element;
     }
 
@@ -39,7 +40,7 @@ public class DinamicArray<String>{
         size--;
     }
 
-    public void add(Object element){
+    public void add(String element){
         if(size == capacity){
             resize();
         }
@@ -47,7 +48,7 @@ public class DinamicArray<String>{
         size++;
     }
 
-    public void insert(int index, Object element){
+    public void insert(int index, String element){
         if(index>capacity) {
             throw new IndexOutOfBoundsException("The index is greather than the array capacity");
         }

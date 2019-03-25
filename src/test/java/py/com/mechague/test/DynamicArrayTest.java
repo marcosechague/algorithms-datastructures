@@ -3,20 +3,20 @@ package py.com.mechague.test;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import py.com.mechague.DinamicArray;
+import py.com.mechague.DynamicArray;
 
 /**
  * @author Marcos Echague
  * @since 19/03/2019
  */
 
-public class DinamycArrayTest {
+public class DynamicArrayTest {
 
-    private DinamicArray array;
+    private DynamicArray array;
 
     @Before
     public void setUp() {
-        array = new DinamicArray<String>(2);
+        array = new DynamicArray(2);
     }
 
     @Test

@@ -12,7 +12,7 @@ import py.com.mechague.LinkedList;
 
 public class LinkedListTest {
 
-    LinkedList linkedList;
+    private LinkedList linkedList;
 
     @Before
     public void setUp(){
