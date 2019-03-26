@@ -56,7 +56,7 @@ public class LinkedList {
         return lastNode.data;
     }
 
-    public void delete(int data){
+    public void deleteValue(int data){
 
         if (head==null) return;
 

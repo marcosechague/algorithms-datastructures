@@ -3,20 +3,20 @@ package py.com.mechague.test;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import py.com.mechague.LinkedList;
+import py.com.mechague.DoubleLinkedList;
 
 /**
  * @author Marcos Echague
- * @since 20/03/2019
+ * @since 25/03/2019
  */
 
-public class LinkedListTest {
+public class DoubleLinkedListTest {
 
-    private LinkedList linkedList;
+    private DoubleLinkedList linkedList;
 
     @Before
     public void setUp(){
-        linkedList = new LinkedList();
+        linkedList = new DoubleLinkedList();
     }
 
     @Test
@@ -60,6 +60,7 @@ public class LinkedListTest {
 
         //deleteValue in tail
         linkedList.addBack(4);
+        System.out.println("Last : "+linkedList.getLast());
         linkedList.deleteValue(4);
         Assert.assertEquals(2,linkedList.size());
         Assert.assertEquals(3, linkedList.getLast());
