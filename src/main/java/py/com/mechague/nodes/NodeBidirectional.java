@@ -1,15 +1,15 @@
-package py.com.mechague;
+package py.com.mechague.nodes;
 
 /**
  * @author Marcos Echague
  * @since 21/03/2019
  */
 
-class NodeBidirectional {
+public class NodeBidirectional {
 
-    protected NodeBidirectional next;
-    protected int data;
-    protected NodeBidirectional previos;
+    public NodeBidirectional next;
+    public int data;
+    public NodeBidirectional previos;
 
     public NodeBidirectional() {
     }

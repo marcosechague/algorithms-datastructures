@@ -1,6 +1,7 @@
 package py.com.mechague;
 
 import py.com.mechague.exceptions.LinkedListEmptyException;
+import py.com.mechague.nodes.Node;
 
 /**
  * @author Marcos Echague

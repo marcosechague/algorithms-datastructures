@@ -1,14 +1,14 @@
-package py.com.mechague;
+package py.com.mechague.nodes;
 
 /**
  * @author Marcos Echague
  * @since 21/03/2019
  */
 
-class Node {
+public class Node {
 
-    protected Node next;
-    protected int data;
+    public Node next;
+    public int data;
 
     public Node() {
     }

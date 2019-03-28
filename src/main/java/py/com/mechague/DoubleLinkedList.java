@@ -1,6 +1,7 @@
 package py.com.mechague;
 
-import py.com.mechague.exceptions.LinkedListEmptyException;
+import py.com.mechague.exceptions.DoubleLinkedListEmptyException;
+import py.com.mechague.nodes.NodeBidirectional;
 
 /**
  * @author Marcos Echague
@@ -41,14 +42,14 @@ public class DoubleLinkedList {
 
     public int getFirst(){ //O(1)
         if(head==null){
-            throw new LinkedListEmptyException();
+            throw new DoubleLinkedListEmptyException();
         }
         return head.data;
     }
 
     public int getLast(){ // O(1)
         if(head==null){
-            throw new LinkedListEmptyException();
+            throw new DoubleLinkedListEmptyException();
         }
         return tail.data;
     }
@@ -74,13 +75,11 @@ public class DoubleLinkedList {
                 if(currentNode.next!=null){
                     currentNode.next.previos = currentNode;
                 }
-
                 return;
             }
 
             currentNode = currentNode.next;
         }
-
     }
 
     //we also can start from the tail
