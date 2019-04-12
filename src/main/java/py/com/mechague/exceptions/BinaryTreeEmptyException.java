@@ -1,0 +1,9 @@
+package py.com.mechague.exceptions;
+
+/**
+ * @author Marcos Echague
+ * @since 27/03/2019
+ */
+
+public class BinaryTreeEmptyException extends RuntimeException {
+}
